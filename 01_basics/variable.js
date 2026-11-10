@@ -15,7 +15,7 @@ getValue()
 console.log("outside B :",name)
 
 const sk=1;
-sk=2;
+// sk=2;
 console.log(sk);
 
 // 1. Var 

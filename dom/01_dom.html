@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Basics</title>
+    <!-- <style>
+        body{
+            color: black;
+        } -->
+    </style>
+</head>
+<body style="background-color: rgb(244, 231, 242);">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+        <!-- Access ChildNodes-->
+        <div class="day">Thursday</div>
+    </div>
+
+
+    <script>
+
+    parent = document.querySelector(".parent")
+
+    // console.log(`Childrens :${parent.children}`)
+    console.log(parent.children)     //childrens 
+    // Accessing Element
+    parent.children[1].style.color = "orange"
+    console.log(parent.firstElementChild)   //fast element
+    console.log(parent.lastElementChild)  // last Element
+    dayOne = document.querySelector('.day')
+    console.log(dayOne.parentElement)      //to access parentELement
+    <!-- Access ChildNodes-->
+    console.log(parent.childNodes);
+
+
+    <!--To access element using for loop-->
+
+    for (let i = 0 ; i < parent.children.length ; i++){
+        console.log(parent.children[i].innerHTML);
+        
+    }   
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>
